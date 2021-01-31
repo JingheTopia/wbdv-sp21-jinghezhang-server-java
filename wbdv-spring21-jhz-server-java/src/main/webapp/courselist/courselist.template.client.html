@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/bae1ffa649.js" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Course Manager</title>
+
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            background-color: ghostwhite;
+        }
+
+        .list-title-col {
+            font-size: medium;
+            width: 40%;
+            color: #929292;
+            text-align: left;
+        }
+
+        .list-title-col-1 {
+            font-size: medium;
+            width: 30%;
+            color: #929292;
+            text-align: left;
+        }
+
+        .list-title-col-content {
+            font-size: small;
+            width: 40%;
+            color: #929292;
+            text-align: left;
+        }
+
+        .list-title-col-content-1 {
+            font-size: small;
+            width: 30%;
+            color: #929292;
+            text-align: left;
+        }
+
+
+        .icon-col {
+            font-size: small;
+            width: 5%;
+            color: #929292;
+        }
+
+        .nav-item a {
+            font-size: medium;
+            color: lightgray;
+        }
+
+        .list-title-col-content a {
+            color: #111111;
+        }
+
+
+        .home-container {
+            margin: 0;
+        }
+
+        .table {
+            margin: 0;
+            padding: 0;
+        }
+        .table-content {
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+            border: 1px solid #929292;
+            background-color: #FFFFFF;
+
+        }
+        .line {
+            margin: 0;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        .nav-item a:hover {
+            color: #f1f1f1;
+        }
+        .nav-item a:active {
+            color: #FFFFFF;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="home-container">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: dimgrey">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Course Manager</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                </ul>
+            </div>
+            <form class="form-inline my-2 my-lg-0">
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <input class="form-control ml-sm-2" type="search" placeholder="New Course Title" aria-label="Search">
+                    </div>
+                    <div class="col-auto">
+                        <a class="courseAddition" href="#">
+                            <i class="fas fa-plus-circle fa-2x" style="color: #FFFFFF"></i>
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </nav>
+
+
+        <nav class="navbar navbar-expand-lg bg-light sticky-top"
+            style="background-color: ghostwhite">
+            <div class="container-fluid">
+
+                <div class="col-10 mx-auto table-container">
+                    <table class="table">
+                        <tr>
+                            <th scope="col"
+                                class="list-title-col" >Title</th>
+                            <th scope="col"
+                                class="list-title-col-1 d-none d-lg-table-cell">Owned By</th>
+                            <th scope="col"
+                                class=" list-title-col-1 d-none d-lg-table-cell">Last modified by me</th>
+                            <th scope="col"
+                                class="icon-col">
+                                <a href="#">
+                                    <i class="fas fa-grip-horizontal"
+                                    style="color: #929292"></i>
+                                </a>
+                            </th>
+                            <th s scope="col"
+                                class="icon-col">
+                                <a href="#">
+                                    <i class="fas fa-sort-alpha-down"
+                                    style="color: #929292"></i>
+                                </a>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </nav>
+        <HR class="line" style="color: #929292">
+
+        <div class="container-fluid">
+            <div class="col-10 mx-auto">
+                <div class="table-responsive">
+                    <table class="table table-hover table-content">
+                        <tbody>
+                        <tr>
+                            <th scope="row">
+                                <i class="far fa-file-alt col-md-auto text-primary"></i>
+                            </th>
+                            <td class="list-title-col-content">
+                                <a href="../editor/editor.template.client.html">
+                                    CS5500 Software Engineering Graduate</a>
+                            </td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">me</td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">3:50 PM</td>
+                            <td class="icon-col"></td>
+                            <td class="icon-col"></td>
+                            <td>
+                                <i class="fas fa-times col-md-auto"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">
+                                <i class="far fa-file-alt col-md-auto text-primary"></i>
+                            </th>
+                            <td class="list-title-col-content">
+                                <a href="../editor/editor.template.client.html">
+                                    CS4500 WebDev Undergraduate</a>
+                            </td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">me</td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">3:50 PM</td>
+                            <td class="icon-col"></td>
+                            <td class="icon-col"></td>
+                            <td>
+                                <i class="fas fa-times col-md-auto"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">
+                                <i class="far fa-file-alt col-md-auto text-primary "></i>
+                            </th>
+                            <td class="list-title-col-content">
+                                <a href="../editor/editor.template.client.html">
+                                    CS5610 WebDev Graduate</a>
+                            </td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">me</td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">3:50 PM</td>
+                            <td class="icon-col"></td>
+                            <td class="icon-col"></td>
+                            <td>
+                                <i class="fas fa-times col-md-auto"></i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row">
+                                <i class="far fa-file-alt col-md-auto text-primary ="></i>
+                            </th>
+                            <td class="list-title-col-content">
+                                <a href="../editor/editor.template.client.html">
+                                    CS5200 Intro to Database</a>
+                            </td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">me</td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">3:50 PM</td>
+                            <td class="icon-col"></td>
+                            <td class="icon-col"></td>
+                            <td>
+                                <i class="fas fa-times col-md-auto"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <br>
+                <h4>
+                    Yesterday
+                </h4>
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-content">
+                        <tbody>
+                        <tr>
+                            <th scope="row">
+                                <i class="far fa-file-alt col-md-auto text-primary"></i>
+                            </th>
+                            <td class="list-title-col-content">
+                                <a href="../editor/editor.template.client.html">
+                                    WebDev 2 - React</a>
+                            </td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">me</td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">Jan 31, 2021</td>
+                            <td class="icon-col"></td>
+                            <td class="icon-col"></td>
+                            <td>
+                                <i class="fas fa-times col-md-auto"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <br>
+                <h4>
+                    Previous 7 Days
+                </h4>
+
+                <div class="table-responsive">
+                    <table class="table table-hover table-content">
+                        <tbody>
+                        <tr>
+                            <th scope="row">
+                                <i class="far fa-file-alt col-md-auto text-primary"></i>
+                            </th>
+                            <td class="list-title-col-content">
+                                <a href="../editor/editor.template.client.html">
+                                    WebDev 2 - Syllabus</a>
+                            </td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">me</td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">May 4, 2020</td>
+                            <td class="icon-col"></td>
+                            <td class="icon-col"></td>
+                            <td>
+                                <i class="fas fa-times col-md-auto"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <i class="far fa-file-alt col-md-auto text-primary"></i>
+                            </th>
+                            <td class="list-title-col-content">
+                                <a href="../editor/editor.template.client.html">
+                                    WebDev 1 - JavaScript, Java, SQL</a>
+                            </td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">me</td>
+                            <td class="list-title-col-content-1 d-none d-lg-table-cell">May 3, 2020</td>
+                            <td class="icon-col"></td>
+                            <td class="icon-col"></td>
+                            <td>
+                                <i class="fas fa-times col-md-auto"></i>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="float-md-right" style="margin-right: 5%">
+            <a href="#">
+                <i class="pull-right fas fa-plus-circle fa-2x"
+                   style="color: #F51B00"></i>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
