@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/bae1ffa649.js" crossorigin="anonymous"></script>
+
+
+    <title>Course Editor</title>
+
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            position: fixed;
+            width: 23%;
+            z-index: 2;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .nav-item a {
+            font-size: medium;
+            color: lightgray;
+        }
+
+        .topic-btn {
+            margin-right: 2%;
+        }
+        .home-container {
+            margin: 0;
+        }
+
+        .navbtn {
+            font-size: medium;
+        }
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+        .nav-item a:hover {
+            color: #f1f1f1;
+        }
+        .nav-item a:active {
+           color: #FFFFFF;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="home-container">
+        <div class="row" >
+
+            <div class="container-fluid">
+            <nav class="navbar navbar-extend-lg navbar-dark bg-secondary" style="background-color: dimgrey">
+                <div class="col-md-1">
+                    <a class="nav-link bg-secondary " href="../courselist/courselist.template.client.html">
+                        <i class="navbar-brand fas fa-times" ></i>
+                    </a>
+                </div>
+                <div class="col-md-3" style="text-align: left">
+                    <i class="navbar-brand">
+                        CS5600 WebDev
+                    </i>
+                </div>
+
+                <ul class="nav nav-pills nav-fill col-md-8">
+                    <li class="nav-item">
+                        <a class="nav-link bg-secondary " href="#">Build</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-secondary " href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-secondary " href="#">Theme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-secondary " href="#">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-secondary " href="#">Apps</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-secondary " href="#">Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bg-secondary " href="#">
+                            <i class="fa fa-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                    <nav class="d-done d-md-block bg-dark sidenav">
+                        <div class="sidebar-sticky">
+                            <ul class="nav">
+                                <div class="container">
+                                    <label class="row"></label>
+                                    <li class="sidenav-item">
+                                        <button type="button" class="btn btn-secondary btn-md col-md-12 navbtn">
+                                            <div class="container">
+                                                <div class="row">
+                                                    Module 1 - JQuery
+                                                    <div class="col">
+                                                        <i class="pull-right fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <label class="row"></label>
+                                    <li class="sidenav-item">
+                                        <button type="button" class="btn btn-secondary btn-md col-md-12 navbtn">
+                                            <div class="container">
+                                                <div class="row">
+                                                 Module 2 - React
+                                                    <div class="col">
+                                                        <i class="pull-right fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <label class="row"></label>
+                                    <li class="sidenav-item">
+                                        <button type="button" class="btn btn-secondary btn-md col-md-12 navbtn">
+                                            <div class="container">
+                                                <div class="row">
+                                                    Module 3 - Redux
+                                                    <div class="col">
+                                                        <i class="pull-right fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <label class="row"></label>
+                                    <li class="sidenav-item">
+                                        <button type="button" class="btn btn-secondary btn-md col-md-12 navbtn">
+                                            <div class="container">
+                                                <div class="row">
+                                                    Module 4 - Native
+                                                    <div class="col">
+                                                        <i class="pull-right fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <label class="row"></label>
+                                    <li class="sidenav-item">
+                                        <button type="button" class="btn btn-secondary btn-md col-md-12 navbtn">
+                                            <div class="container">
+                                                <div class="row">
+                                                   Module 5 - Angular
+                                                    <div class="col">
+                                                        <i class="pull-right fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <label class="row"></label>
+                                    <li class="sidenav-item">
+                                        <button type="button" class="btn btn-secondary btn-md col-md-12 navbtn">
+                                            <div class="container">
+                                                <div class="row">
+                                                    Module 6 - Node
+                                                    <div class="col">
+                                                        <i class="pull-right fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <label class="row"></label>
+                                    <li class="sidenav-item">
+                                        <button type="button" class="btn btn-secondary btn-md col-md-12 navbtn">
+                                            <div class="container">
+                                                <div class="row" >
+                                                    Module 7 - Mongo
+                                                    <div class="col">
+                                                        <i class="pull-right fas fa-times"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </li>
+                                    <label class="row"></label>
+                                    <label class="row"></label>
+                                    <i class="pull-right fas fa-plus "
+                                       style="color: #FFFFFF"></i>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
+            </div>
+            <div class="col-8">
+               <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <label class="row"></label>
+                            <button type="button" class="btn btn-secondary topic-btn">Topic 1</button>
+                            <button type="button" class="btn btn-secondary topic-btn">Topic 2</button>
+                            <button type="button" class="btn btn-secondary topic-btn">Topic 3</button>
+                            <button type="button" class="btn btn-secondary topic-btn">Topic 4</button>
+                            <button type="button" class="btn btn-secondary topic-btn">
+                                <a class="topic-link" style="color: #FFFFFF" href="#">
+                                    <i class="fa fa-plus"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+               </div>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
