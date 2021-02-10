@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Management System</title>
+<link rel="stylesheet" href=
+  "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+<link rel="stylesheet" href=
+  "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link href="user-admin.style.client.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous"></script>
+	<script src="../services/user.service.client.js"></script>
+	<script src="user-admin.controller.client.js"></script>
+</head>
+<head>
+  <meta charset="UTF-8">
+  <label class="fixed-top">
+  	<title>User management</title>
+  </label>
+</head>
+
+<body class="bg-light">
+  	<nav class="navbar navbar-extend-lg navbar-dark bg-secondary">
+    	<H3 class="text-white"
+		id = "heading">User Admin</H3>
+  	</nav>
+  	<nav class="navbar navbar-expand-lg bg-light sticky-top">
+		<div class="container-fluid">
+			<div class="col-10 mx-auto">
+				<table class="table table-hover">
+					<thead>
+				    <tr class="wbdv-nav">
+				    	<th scope="col"
+				    			class="wbdv-table-title">Username</th>
+							<th scope="col"
+									class="wbdv-table-title d-none d-lg-table-cell">Password</th>
+							<th scope="col"
+									class="wbdv-table-title d-none d-lg-table-cell">First Name</th>
+							<th scope="col"
+								class="wbdv-table-title d-none d-lg-table-cell">Last Name</th>
+							<th scope="col"
+								class="wbdv-table-title d-none d-lg-table-cell">Role</th>
+					  	<th class="formSpace"></th>
+						<th></th>
+					</tr>
+				  	<tr class="wbdv-form" >
+						<form id = "wbdv-form-input">
+				  		<th>
+				  			<input id="usernameFld"
+				  			   	   class="form-control wbdv-title-fld"
+				  			       placeholder="Username">
+				  		</th>
+				  		<th>
+				  			<input id="passwordFld"
+								   type="password"
+				  			   	   class="form-control wbdv-title-fld"
+				  			       placeholder="Password">
+				  		</th>
+				  		<th>
+				  			<input id="firstNameFld"
+				  			   	   class="form-control wbdv-title-fld"
+				  			       placeholder="First Name">
+				  		</th>
+				  		<th>
+				  			<input id="lastNameFld"
+				  			   	   class="form-control wbdv-title-fld"
+				  			       placeholder="Last Name">
+				  		</th>
+				  		<th>
+				  			<select id="roleFld" class="form-control wbdv-title-fld">
+						      <option value="FACULTY">Faculty</option>
+						      <option value="STUDENT">Student</option>
+						      <option value="ADMIN">Admin</option>
+						  	</select>
+							</th>
+							<th>&nbsp;</th>
+							<th class="formButton">
+								<span class="float-right" style="white-space: nowrap">
+									<i class="fa-2x fa fa-search col-md-auto wbdv-search"
+									   onclick="findUserById()"></i>
+									<i class="fa-2x fa fa-plus col-md-auto wbdv-create"
+										 onclick="createUser()"></i>
+									<i class="fa-2x fa fa-check col-md-auto wbdv-update"
+										 onclick="updateUser()"></i>
+								</span>
+							</th>
+						</form>
+				  	</tr>
+					</thead>
+					<tbody id="user-table" style="white-space: nowrap" class="wbdv-tbody"></tbody>
+				</table>
+			</div>
+		</div>
+	</nav>
+
+</body>

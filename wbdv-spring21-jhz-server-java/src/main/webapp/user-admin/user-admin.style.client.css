@@ -1,0 +1,42 @@
+tr.wbdv-nav th {
+  width: 12%;
+  color: #808080;
+}
+
+tr.wbdv-form td {
+  width: 12%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: ghostwhite;
+}
+
+.line {
+  margin: 0;
+}
+
+.wbdv-table-title {
+  text-align: center;
+  font-weight: bold;
+  column-width: auto;
+}
+
+.wbdv-table-content {
+  text-align: center;
+  font-weight: normal;
+  column-width: auto;
+}
+
+.wbdv-title-fld {
+  text-align: center;
+}
+
+tbody {
+  padding: 0;
+  margin: 0;
+}
+
+td.wbdv-icons {
+  width: 16%;
+}
