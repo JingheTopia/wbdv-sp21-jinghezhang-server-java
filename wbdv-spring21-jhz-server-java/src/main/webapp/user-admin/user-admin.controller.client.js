@@ -18,6 +18,7 @@ function createUser() {
   adminUserService.createUser(user).then(function(actualUser){
     users.push(actualUser)
     renderUsers(users)
+    document.getElementById("wbdv-form-input").reset()
   })
 }
 
@@ -54,15 +55,13 @@ function updateUser() {
     users[theIdx] = selectedUser
     renderUsers(users)
     document.getElementById("wbdv-form-input").reset()
-
   })
 }
 
 let searchedUser;
 function findUserById(userId) {
   adminUserService.findUserById(userId).then(function(status) {
-    searchedUser = users.find(user => user.username === userId)
-    alert(searchedUser.username);
+    searchedUser = users.find(user => user._id === userId)
   })
 }
 
