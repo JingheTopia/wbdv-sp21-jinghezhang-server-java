@@ -4,13 +4,21 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import javax.persistence.*;
+
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
+@Table(name = "widgets")
 public class Widget {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String type;
+    private String name;
     private Integer size;
     private String text;
     private String topicId;
@@ -22,12 +30,5 @@ public class Widget {
     private String style;
     private String value;
 
-    public Widget(Long id,  String topicId, String type,  Integer size, String text) {
-        this.id = id;
-        this.type = type;
-        this.size = size;
-        this.text = text;
-        this.topicId = topicId;
-    }
 }
 
